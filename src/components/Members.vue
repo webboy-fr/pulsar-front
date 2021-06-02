@@ -15,7 +15,7 @@
       }
     },
     async created() {
-      let data = await fetch('http://pulsar.back/members')
+      let data = await fetch('http://api.pulsar.local/members')
       this.members = await data.json();
     }
 
